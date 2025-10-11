@@ -1,0 +1,47 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    android:layout_marginVertical="4dp">
+
+    <LinearLayout
+        android:id="@+id/team_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/team_name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/supercell"
+                android:imeOptions="actionDone"
+                android:inputType="textCapWords"
+                android:padding="12dp"
+                android:text="Команда 1"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/remove_team_button"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/white"
+            app:icon="@drawable/ic_remove"
+            app:iconTint="@color/team_1_color" />
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
